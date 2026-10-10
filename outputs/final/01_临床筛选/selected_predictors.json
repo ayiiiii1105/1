@@ -1,0 +1,31 @@
+{
+  "univariable_p_lt_0_05": [
+    "Weight(kg)",
+    "PLT(10^9/L)",
+    "Lymphnodemetastasis(N-stage)"
+  ],
+  "independent_predictors": [
+    "Lymphnodemetastasis(N-stage)",
+    "PLT(10^9/L)",
+    "Weight(kg)"
+  ],
+  "multivariable_method": "standard_logistic",
+  "multivariable_n": 187,
+  "imputation": {
+    "Weight(kg)": {
+      "method": "median",
+      "value": 65.0,
+      "missing_n": 0
+    },
+    "PLT(10^9/L)": {
+      "method": "median",
+      "value": 218.0,
+      "missing_n": 0
+    },
+    "Lymphnodemetastasis(N-stage)": {
+      "method": "mode",
+      "value": "2",
+      "missing_n": 0
+    }
+  }
+}

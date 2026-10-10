@@ -1,0 +1,22 @@
+# 患者数据（隐私与体积）：原始影像与临床表，不入库
+Original data/
+Preprocess/
+Clinical_data.xlsx
+Clinical_data_cleaning.xlsx
+
+# 大体积中间数据（可重建）：变体断点与变体特征表
+outputs/archive/feature_variants/checkpoint_*.json
+outputs/archive/feature_variants/Radiomics_features_*.csv
+
+# 运行时缓存
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 运行日志
+logs/
+
+# 编辑器与系统文件
+.vscode/
+.DS_Store
+Thumbs.db

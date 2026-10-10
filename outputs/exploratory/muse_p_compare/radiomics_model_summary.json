@@ -1,0 +1,93 @@
+{
+  "best_model": "XGBoost",
+  "features": [
+    "wavelet-HLH_glszm_SmallAreaLowGrayLevelEmphasis",
+    "original_shape_MajorAxisLength",
+    "wavelet-HHL_glszm_LargeAreaLowGrayLevelEmphasis"
+  ],
+  "top_k": 30,
+  "all_features": 1130,
+  "first_stage": "muse",
+  "muse_p": 0.5,
+  "tuning": "bayesian_optuna",
+  "nested_screening": true,
+  "threshold": 0.5928145051002502,
+  "train_n": 187,
+  "validation_n": 81,
+  "outcome": "Evaluation=1 -> y=1; Evaluation=2 -> y=0",
+  "comparison": [
+    {
+      "model": "XGBoost",
+      "train_nested_cv_roc_auc": 0.6294824016563146,
+      "roc_auc": 0.63,
+      "pr_auc": 0.7327551682202293,
+      "brier_score": 0.2411169501014559,
+      "sensitivity": 0.7,
+      "specificity": 0.5483870967741935,
+      "accuracy": 0.6419753086419753,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 500, \"max_depth\": 4, \"learning_rate\": 0.05347793196789479, \"min_child_weight\": 9, \"subsample\": 0.9873077499323026, \"colsample_bytree\": 0.8487816007240522, \"reg_lambda\": 2.9897381207706726}"
+    },
+    {
+      "model": "LightGBM",
+      "train_nested_cv_roc_auc": 0.6147826086956522,
+      "roc_auc": 0.6390322580645161,
+      "pr_auc": 0.7016985879917886,
+      "brier_score": 0.2318751619888529,
+      "sensitivity": 0.72,
+      "specificity": 0.5483870967741935,
+      "accuracy": 0.654320987654321,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 100, \"learning_rate\": 0.10307797371368607, \"num_leaves\": 22, \"min_child_samples\": 40, \"reg_lambda\": 9.752295510880069}"
+    },
+    {
+      "model": "RandomForest",
+      "train_nested_cv_roc_auc": 0.5987163561076605,
+      "roc_auc": 0.6225806451612903,
+      "pr_auc": 0.6862954024235082,
+      "brier_score": 0.23906046710302417,
+      "sensitivity": 0.68,
+      "specificity": 0.5483870967741935,
+      "accuracy": 0.6296296296296297,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 200, \"max_depth\": 12, \"min_samples_leaf\": 7, \"max_features\": 0.5}"
+    },
+    {
+      "model": "ExtraTrees",
+      "train_nested_cv_roc_auc": 0.5890890269151139,
+      "roc_auc": 0.645483870967742,
+      "pr_auc": 0.7087087411629165,
+      "brier_score": 0.2386960907013814,
+      "sensitivity": 0.68,
+      "specificity": 0.4838709677419355,
+      "accuracy": 0.6049382716049383,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 600, \"max_depth\": null, \"min_samples_leaf\": 1, \"max_features\": 0.5}"
+    },
+    {
+      "model": "SVM",
+      "train_nested_cv_roc_auc": 0.5791718426501036,
+      "roc_auc": 0.644516129032258,
+      "pr_auc": 0.7351457634686291,
+      "brier_score": 0.2330858153956052,
+      "sensitivity": 0.9,
+      "specificity": 0.1935483870967742,
+      "accuracy": 0.6296296296296297,
+      "threshold": 0.5,
+      "best_params": "{\"model__C\": 0.0745934328572655, \"model__kernel\": \"linear\"}"
+    },
+    {
+      "model": "LR",
+      "train_nested_cv_roc_auc": 0.5708488612836439,
+      "roc_auc": 0.635483870967742,
+      "pr_auc": 0.7286572277158236,
+      "brier_score": 0.24532785615784986,
+      "sensitivity": 0.76,
+      "specificity": 0.5161290322580645,
+      "accuracy": 0.6666666666666666,
+      "threshold": 0.5,
+      "best_params": "{\"model__C\": 0.0074593432857265485}"
+    }
+  ],
+  "n_trials": 30
+}

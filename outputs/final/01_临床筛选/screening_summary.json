@@ -1,0 +1,13 @@
+{
+  "train_n": 187,
+  "validation_n": 81,
+  "raw_features": 1130,
+  "pearson_features": 335,
+  "first_stage": "muse",
+  "top_k": 30,
+  "stage1_features": 30,
+  "lasso_features": 5,
+  "nested_screening": true,
+  "positive_label": "Evaluation=1 -> y=1",
+  "negative_label": "Evaluation=2 -> y=0"
+}

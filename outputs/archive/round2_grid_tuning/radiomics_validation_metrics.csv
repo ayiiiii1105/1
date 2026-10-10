@@ -1,0 +1,2 @@
+﻿accuracy,brier_score,model,pr_auc,roc_auc,sensitivity,specificity,split,threshold
+0.654320987654321,0.21830781249999998,RandomForest,0.7388240377364812,0.6764516129032259,0.76,0.4838709677419355,validation,0.535

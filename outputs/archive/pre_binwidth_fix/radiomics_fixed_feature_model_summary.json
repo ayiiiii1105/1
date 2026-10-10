@@ -1,0 +1,95 @@
+{
+  "features": [
+    "wavelet-HLL_firstorder_InterquartileRange",
+    "original_shape_Sphericity",
+    "original_glszm_ZoneVariance",
+    "wavelet-LHH_firstorder_Skewness",
+    "wavelet-LLH_glrlm_HighGrayLevelRunEmphasis",
+    "wavelet-LLH_glszm_GrayLevelNonUniformityNormalized",
+    "wavelet-LHL_firstorder_InterquartileRange"
+  ],
+  "feature_count": 7,
+  "feature_rescreened": false,
+  "train_n": 187,
+  "validation_n": 81,
+  "comparison": [
+    {
+      "model": "SVM",
+      "feature_mode": "fixed_7_features",
+      "train_n": 187,
+      "validation_n": 81,
+      "roc_auc": 0.6064516129032259,
+      "pr_auc": 0.6923888875630547,
+      "brier_score": 0.2285614354426553,
+      "sensitivity": 1.0,
+      "specificity": 0.0,
+      "accuracy": 0.6172839506172839,
+      "threshold": 0.5
+    },
+    {
+      "model": "XGBoost",
+      "feature_mode": "fixed_7_features",
+      "train_n": 187,
+      "validation_n": 81,
+      "roc_auc": 0.5535483870967741,
+      "pr_auc": 0.6534054631758965,
+      "brier_score": 0.2468655859667085,
+      "sensitivity": 0.8,
+      "specificity": 0.2903225806451613,
+      "accuracy": 0.6049382716049383,
+      "threshold": 0.5
+    },
+    {
+      "model": "ExtraTrees",
+      "feature_mode": "fixed_7_features",
+      "train_n": 187,
+      "validation_n": 81,
+      "roc_auc": 0.5412903225806451,
+      "pr_auc": 0.6684654627072062,
+      "brier_score": 0.2446671167725612,
+      "sensitivity": 0.66,
+      "specificity": 0.41935483870967744,
+      "accuracy": 0.5679012345679012,
+      "threshold": 0.5
+    },
+    {
+      "model": "LightGBM",
+      "feature_mode": "fixed_7_features",
+      "train_n": 187,
+      "validation_n": 81,
+      "roc_auc": 0.5390322580645162,
+      "pr_auc": 0.6798320638319205,
+      "brier_score": 0.24525289372303463,
+      "sensitivity": 0.8,
+      "specificity": 0.2903225806451613,
+      "accuracy": 0.6049382716049383,
+      "threshold": 0.5
+    },
+    {
+      "model": "RandomForest",
+      "feature_mode": "fixed_7_features",
+      "train_n": 187,
+      "validation_n": 81,
+      "roc_auc": 0.5245161290322581,
+      "pr_auc": 0.6755298628640336,
+      "brier_score": 0.2592093002851585,
+      "sensitivity": 0.66,
+      "specificity": 0.2903225806451613,
+      "accuracy": 0.5185185185185185,
+      "threshold": 0.5
+    },
+    {
+      "model": "LR",
+      "feature_mode": "fixed_7_features",
+      "train_n": 187,
+      "validation_n": 81,
+      "roc_auc": 0.5219354838709678,
+      "pr_auc": 0.6522914531801156,
+      "brier_score": 0.250279783595935,
+      "sensitivity": 0.58,
+      "specificity": 0.5161290322580645,
+      "accuracy": 0.5555555555555556,
+      "threshold": 0.5
+    }
+  ]
+}

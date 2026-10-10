@@ -1,0 +1,2 @@
+﻿n_validation,model_a,model_b,auc_a,auc_b,auc_diff_radiomics_minus_clinical,delong_z,delong_p,bootstrap_ci_lower,bootstrap_ci_upper,bootstrap_p,bootstrap_repeats,random_state
+81,影像_ExtraTrees,临床_SVM,0.6719354838709677,0.6793548387096775,-0.007419354838709813,-0.07541021216148196,0.9398883342171864,-0.20498988178721705,0.18423740248787665,0.924,2000,42

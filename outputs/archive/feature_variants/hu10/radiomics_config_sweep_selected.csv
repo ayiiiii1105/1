@@ -1,0 +1,2 @@
+﻿screen,screen_description,top_k,pearson_threshold,model,n_features,train_cv_roc_auc,oof_auc,roc_auc,pr_auc,brier_score,sensitivity,specificity,accuracy,threshold,best_params,features
+lasso,mRMR Top30 → LASSO,30,0.9,Ensemble,4,0.6690821256038648,0.6690821256038648,0.6119354838709677,0.72200474939604,0.24823768675807803,0.62,0.6129032258064516,0.6172839506172839,0.5,rank_average_of_6_models,wavelet-LLH_glszm_LargeAreaLowGrayLevelEmphasis;wavelet-HHL_glszm_LargeAreaLowGrayLevelEmphasis;wavelet-HHL_firstorder_Mean;wavelet-HLL_ngtdm_Busyness

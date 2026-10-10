@@ -1,0 +1,26 @@
+{
+  "protocol": "所有变体的配置均由训练集五折交叉验证调参，验证集对每个配置只评估一次。主选择口径为跨折合并的 OOF AUC（oof_auc）；折平均 CV AUC（train_cv_roc_auc）在强正则化模型上会因跨折尺度漂移而虚高，仅作参考。",
+  "n_configurations": 224,
+  "best_by_oof_auc": {
+    "feature_variant": "hu25_log12345",
+    "top_k": 50,
+    "model": "LightGBM",
+    "train_cv_roc_auc": 0.7012008281573499,
+    "roc_auc": 0.5896774193548386
+  },
+  "best_by_fold_mean_cv_auc": {
+    "feature_variant": "hu25_log12345",
+    "top_k": 50,
+    "model": "LightGBM",
+    "train_cv_roc_auc": 0.7012008281573499,
+    "roc_auc": 0.5896774193548386
+  },
+  "best_by_validation_optimistic": {
+    "feature_variant": "hu25_log12345",
+    "top_k": 30,
+    "model": "ExtraTrees",
+    "train_cv_roc_auc": 0.6235610766045548,
+    "roc_auc": 0.6799999999999999
+  },
+  "caveat": "按验证集选择的最大值偏乐观，其真实验证性能会被高估；临床模型的 0.679 也是在验证集上选出来的，二者口径相同。"
+}

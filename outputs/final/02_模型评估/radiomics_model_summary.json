@@ -1,0 +1,95 @@
+{
+  "best_model": "ExtraTrees",
+  "features": [
+    "wavelet-HLL_ngtdm_Busyness",
+    "wavelet-HLH_glszm_SmallAreaLowGrayLevelEmphasis",
+    "wavelet-LLH_gldm_DependenceEntropy",
+    "wavelet-HLH_firstorder_Maximum",
+    "log-sigma-1-0-mm-3D_firstorder_Uniformity"
+  ],
+  "top_k": 30,
+  "all_features": 1130,
+  "first_stage": "muse",
+  "muse_p": 1.0,
+  "tuning": "bayesian_optuna",
+  "nested_screening": true,
+  "threshold": 0.5821428571428572,
+  "train_n": 187,
+  "validation_n": 81,
+  "outcome": "Evaluation=1 -> y=1; Evaluation=2 -> y=0",
+  "comparison": [
+    {
+      "model": "ExtraTrees",
+      "train_nested_cv_roc_auc": 0.6632091097308488,
+      "roc_auc": 0.6719354838709678,
+      "pr_auc": 0.7372070300687159,
+      "brier_score": 0.21651574703955656,
+      "sensitivity": 0.86,
+      "specificity": 0.45161290322580644,
+      "accuracy": 0.7037037037037037,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 1400, \"max_depth\": null, \"min_samples_leaf\": 1, \"max_features\": 0.5}"
+    },
+    {
+      "model": "RandomForest",
+      "train_nested_cv_roc_auc": 0.6536231884057971,
+      "roc_auc": 0.6764516129032259,
+      "pr_auc": 0.7388240377364812,
+      "brier_score": 0.21830781249999998,
+      "sensitivity": 0.84,
+      "specificity": 0.41935483870967744,
+      "accuracy": 0.6790123456790124,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 800, \"max_depth\": null, \"min_samples_leaf\": 1, \"max_features\": \"sqrt\"}"
+    },
+    {
+      "model": "SVM",
+      "train_nested_cv_roc_auc": 0.6428985507246376,
+      "roc_auc": 0.6670967741935484,
+      "pr_auc": 0.726013537702175,
+      "brier_score": 0.21444002025655517,
+      "sensitivity": 0.88,
+      "specificity": 0.45161290322580644,
+      "accuracy": 0.7160493827160493,
+      "threshold": 0.5,
+      "best_params": "{\"model__C\": 3.0240503427727154, \"model__kernel\": \"rbf\"}"
+    },
+    {
+      "model": "XGBoost",
+      "train_nested_cv_roc_auc": 0.6403105590062113,
+      "roc_auc": 0.575483870967742,
+      "pr_auc": 0.6742131579046529,
+      "brier_score": 0.3015034808221822,
+      "sensitivity": 0.66,
+      "specificity": 0.4838709677419355,
+      "accuracy": 0.5925925925925926,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 600, \"max_depth\": 4, \"learning_rate\": 0.2975261995001501, \"min_child_weight\": 10, \"subsample\": 0.8347184121455683, \"colsample_bytree\": 0.787259441123297, \"reg_lambda\": 0.10378834334130309}"
+    },
+    {
+      "model": "LightGBM",
+      "train_nested_cv_roc_auc": 0.6139544513457558,
+      "roc_auc": 0.6335483870967742,
+      "pr_auc": 0.7003243303230706,
+      "brier_score": 0.2254631893859371,
+      "sensitivity": 0.84,
+      "specificity": 0.5161290322580645,
+      "accuracy": 0.7160493827160493,
+      "threshold": 0.5,
+      "best_params": "{\"n_estimators\": 300, \"learning_rate\": 0.010234359337573648, \"num_leaves\": 14, \"min_child_samples\": 33, \"reg_lambda\": 3.402409758200885}"
+    },
+    {
+      "model": "LR",
+      "train_nested_cv_roc_auc": 0.6029399585921326,
+      "roc_auc": 0.6503225806451612,
+      "pr_auc": 0.7446975715341502,
+      "brier_score": 0.24704474448908312,
+      "sensitivity": 0.74,
+      "specificity": 0.5806451612903226,
+      "accuracy": 0.6790123456790124,
+      "threshold": 0.5,
+      "best_params": "{\"model__C\": 7.976005528377323}"
+    }
+  ],
+  "n_trials": 30
+}

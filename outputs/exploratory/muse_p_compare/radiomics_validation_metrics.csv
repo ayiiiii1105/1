@@ -1,0 +1,2 @@
+﻿accuracy,brier_score,model,pr_auc,roc_auc,sensitivity,specificity,split,threshold
+0.5555555555555556,0.2411169501014559,XGBoost,0.7327551682202293,0.63,0.54,0.5806451612903226,validation,0.5928145051002502

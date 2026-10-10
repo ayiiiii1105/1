@@ -1,0 +1,11 @@
+﻿bin,mean_predicted_probability,n,observed_CR_fraction,split
+1,0.5058075208186773,9,0.2222222222222222,validation_combined
+2,0.5191312782936567,8,0.5,validation_combined
+3,0.5353009608965219,8,0.75,validation_combined
+4,0.5623959949961675,8,0.5,validation_combined
+5,0.6160817266634397,8,0.375,validation_combined
+6,0.6660943263875807,8,0.875,validation_combined
+7,0.6989370534545137,8,0.625,validation_combined
+8,0.7112360124026375,8,0.875,validation_combined
+9,0.7167802791371203,8,0.75,validation_combined
+10,0.7216550143400178,8,0.75,validation_combined

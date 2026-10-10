@@ -1,0 +1,13 @@
+{
+  "model": "SVM",
+  "variables": [
+    "Lymphnodemetastasis(N-stage)",
+    "PLT(10^9/L)",
+    "Weight(kg)"
+  ],
+  "random_state": null,
+  "validation_strategy": "fit_all_models_on_train_compare_on_combined_validation",
+  "bootstrap_repeats": 500,
+  "validation_selected_threshold": 0.645551860899573,
+  "calibration_plot_created": false
+}

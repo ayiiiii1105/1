@@ -1,0 +1,22 @@
+{
+  "method": "固定严格嵌套筛选得到的最终特征和最优超参数；训练集逐例留一重拟合，验证集逐例留一但固定完整训练模型",
+  "features": [
+    "wavelet-HLL_firstorder_InterquartileRange",
+    "original_shape_Sphericity",
+    "original_glszm_ZoneVariance",
+    "wavelet-LHH_firstorder_Skewness",
+    "wavelet-LLH_glrlm_HighGrayLevelRunEmphasis",
+    "wavelet-LLH_glszm_GrayLevelNonUniformityNormalized",
+    "wavelet-LHL_firstorder_InterquartileRange"
+  ],
+  "train_n": 187,
+  "validation_n": 81,
+  "models": [
+    "ExtraTrees",
+    "LR",
+    "LightGBM",
+    "RandomForest",
+    "SVM",
+    "XGBoost"
+  ]
+}
